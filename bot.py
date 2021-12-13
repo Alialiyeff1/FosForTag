@@ -25,32 +25,32 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀 FrozenTaggerBoT 🌀**, \n\nGrubunuzdakı Üyeleri Sizin Yerinize Etiketleye Bilirim **/help**. Komutundan Kullanarak Yardım Menüsunu Göre Bilirsiz🌀.\n @FlackTaggerOffical 👨‍💻",
+  await event.reply("**@ZionTaggerBot** Grubunuzdakı Üyeleri Etiketler \n ==========> /help \n Basarak Yardım Menüsunu Göre Bilirsiz\n\n@ZionBots",
                     buttons=(
-                      [Button.url('➕ Beni Gruba Ekle ➕', 'https://t.me/frozentaggerbot?startgroup=a'),
-                      Button.url('👨‍💻Creator👨‍💻', 'https://t.me/FrozenBey'),
+                      [Button.url('➕ Beni Gruba Ekle ➕', 'https://t.me/ziontaggerbot?startgroup=a'),
+                      Button.url('👨‍💻Creator👨‍💻', 'https://t.me/ZionBey'),
                       ],
                       [
-                      Button.url('🔖Resmi Kanal', 'https://t.me/FrozenBots')]
+                      Button.url('🔖Resmi Kanal', 'https://t.me/ZionBots')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 FrozenTaggerBotun Yardım**\n\n\nKomut: /all \n  Bu Komut ile Basit Şekilde Grubunuzdakı üyeleri Çağıra Bilirsiz. \n`Mesela: /all Merhaba`  \nBu komutu Yanıtlayarakta Kullana Bilirisiz.!"
+  helptext = "**@ZionTaggerBot Yardım Menüsu \n \n Komutlar : /all Komutu ile Grubunuzdakı üyeleri basit bi şekilde çağıra bilirsiz\n\n /durdur Komutu ile üye Etiketleme işlemini durdura bilirsjz"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('➕ Beni Gruba Ekle ➕', 'https://t.me/frozentaggerbot?startgroup=a'),
-                      Button.url('👨‍💻Creator👨‍💻', 'https://t.me/FrozenBey'),
+                      [Button.url('➕ Beni Gruba Ekle ➕', 'https://t.me/ziontaggerbot?startgroup=a'),
+                      Button.url('👨‍💻Creator👨‍💻', 'https://t.me/ZionBey'),
                       ],
                       [
-                      Button.url('🔖Resmi Kanal', 'https://t.me/FrozenBots')]
+                      Button.url('🔖Resmi Kanal', 'https://t.me/ZionBots')]
                     ),
                     link_preview=False
                    )
 
 
-@client.on(events.NewMessage(pattern="^/utag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/all ?(.*)"))
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
