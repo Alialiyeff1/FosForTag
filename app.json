@@ -1,0 +1,22 @@
+{
+  "name": "Frozen Tagger Bot",
+  "logo":"https://telegra.ph/file/133b9125da464d1db6fca.jpg",
+  "description": "Frozen Tagger ÜCRETSİZ ŞEKILDE GRUBUNUZDA ÜYELERI ETIKETLEYE BILIR.",
+  "env": {
+    "TOKEN": {
+      "description": "@botfather Vasitesi ile Ala Bilersen(Gerekli)",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": " my.telegram.org vasitesi ile ala bilersen (Gerekli)",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "my.telegram.org Vasitesi ile ala bilersen (Gerekli)",
+      "value": ""
+    }
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }]
+}
