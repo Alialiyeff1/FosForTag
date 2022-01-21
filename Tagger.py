@@ -97,7 +97,7 @@ async def mentionall(event):
     return await event.respond("**Etikete Başlamak için sebeb yazın...!**")
   
   if mode == "text_on_cmd":
-    emoji_calisan.append(event.chat_id)
+    anlik_calisan.append(event.chat_id)
     usrnum = 0
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
