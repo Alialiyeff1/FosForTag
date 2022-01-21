@@ -1,4 +1,4 @@
-import os, logging, asyncio
+import random, os, logging, asyncio
 from telethon import Button
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
@@ -15,16 +15,10 @@ api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
-emoji_calisan = []
 
 anlik_calisan = []
 
 tekli_calisan = []
-
-@client.on(events.NewMessage(pattern='^(?i)/cancel'))
-async def cancel(event):
-  global emoji_calisan
-  emoji_calisan.remove(event.chat_id)
 
 
 
@@ -67,8 +61,8 @@ async def help(event):
 
 @client.on(events.NewMessage(pattern='^(?i)/cancel'))
 async def cancel(event):
-  global emoji_calisan
-  emoji_calisan.remove(event.chat_id)
+  global anlik_calisan
+  anlik_calisan.remove(event.chat_id)
 
 
 emoji = " ❤️ 🧡 💛 💚 💙 💜 🖤 🤍 🤎 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛 😝 😜 🤪 🤨 🧐 🤓 😎 🤩 🥳 😏 😒 " \
@@ -79,7 +73,7 @@ emoji = " ❤️ 🧡 💛 💚 💙 💜 🖤 🤍 🤎 🙂 🙃 😉 😌 �
 
 @client.on(events.NewMessage(pattern="^/etag ?(.*)"))
 async def mentionall(event):
-  global emoji_calisan
+  global anlik_calisan
   if event.is_private:
     return await event.respond("**Bu komutu gruplar ve kanallar için geçerli❗**")
   
@@ -109,7 +103,7 @@ async def mentionall(event):
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
-      if event.chat_id not in emoji_calisan:
+      if event.chat_id not in anlik_calisan:
         await event.respond("** Etiket işlemi başarıyla durduruldu❌**")
         return
       if usrnum == 5:
@@ -120,14 +114,14 @@ async def mentionall(event):
         
   
   if mode == "text_on_reply":
-    emoji_calisan.append(event.chat_id)
+    anlik_calisan.append(event.chat_id)
  
     usrnum = 0
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
-      if event.chat_id not in emoji_calisan:
+      if event.chat_id not in anlik_calisan:
         await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @LuciBots**❌")
         return
       if usrnum == 5:
@@ -139,8 +133,8 @@ async def mentionall(event):
 
 @client.on(events.NewMessage(pattern='^(?i)/cancel'))
 async def cancel(event):
-  global emoji_calisan
-  emoji_calisan.remove(event.chat_id)
+  global anlik_calisan
+  anlik_calisan.remove(event.chat_id)
 
 
 @client.on(events.NewMessage(pattern="^/tag ?(.*)"))
