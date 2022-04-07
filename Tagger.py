@@ -26,8 +26,7 @@ tekli_calisan = []
 async def start(event):
   await event.reply("**🌀 SohbetHanemTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
                     buttons=(
-                   
-		      [Button.url('Beni Gruba Ekle ➕', 'http://t.me/SohbetHanemTaggerBot?startgroup=a')],
+    		      [Button.url('Beni Gruba Ekle ➕', 'http://t.me/SohbetHanemTaggerBot?startgroup=a')],
                       [button.url('Group 🛠', 'https://t.me/sohbethaneem')],
                       [Button.url('Resmi Kanal📣', 'https://t.me/anteplipanel')],
 		      [Button.url('👨🏻‍💻', 'https://t.me/anteplibebekk')],
