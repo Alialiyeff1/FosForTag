@@ -24,13 +24,13 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀LuciTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
+  await event.reply("**🌀 SohbetHanemTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/lucitaggerbot?startgroup=a')],
-                      [Button.url('Support🛠', 'https://t.me/LuciSup')],
-                      [Button.url('Resmi Kanal📣', 'https://t.me/LuciBots')],
-		      [Button.url('Developer👨🏻‍💻', 'https://t.me/LuciMarka')],
+		      [Button.url('Beni Gruba Ekle ➕', 'http://t.me/SohbetHanemTaggerBot?startgroup=a')],
+                      [button.url('Grup🛠', 'https://t.me/sohbethaneem')],
+                      [Button.url('Resmi Kanal📣', 'https://t.me/anteplipanel')],
+		      [Button.url('👨🏻‍💻', 'https://t.me/anteplibebekk')],
                     ),
                     link_preview=False
                    )
@@ -39,10 +39,10 @@ async def help(event):
   helptext = "**🌀 LuciTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Beni Gruba Ekle➕', 'https://t.me/lucitaggerbot?startgroup=a')],
-                      [Button.url('Support👨‍💻', 'https://t.me/LuciSup')],
-                      [Button.url('Resmi Kanal🔖', 'https://t.me/LuciBots')],
-		      [Button.url('Developer🧑‍🔧', 'https://t.me/LuciMarka')],
+                      [Button.url('Beni Gruba Ekle➕', 'https://t.me/SohbetHanemTaggerBot?startgroup=a')],
+                      [Button.url('Grup👨‍💻', 'https://t.me/SohbetHaanem')],
+                      [Button.url('Resmi Kanal🔖', 'https://t.me/anteplipanel')],
+		      [Button.url('Geliştirici🧑‍🔧', 'https://t.me/anteplibebekk')],
                     ),
                     link_preview=False
                    )
