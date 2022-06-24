@@ -1,2 +1,2 @@
-### 🚀 Heroku'ya dağıtın
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hesenovhuseyn/LuciTaggerBot)
+### 🚀 Deploy to heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rahid2003/RahidTag)
