@@ -89,7 +89,7 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("**Keçmiş mesajlar üçün tag edə bilmirəm**")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("Tag etmək üçün səbəb yoxdur❗️")
+    return await event.respond("Tag etmək üçün səbəb yazın❗️")
   else:
     return await event.respond("**Tag başlamaq üçün səbəb yazın...!**")
   
@@ -155,9 +155,9 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("Əvvəlki mesajlara cavab verməyin")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("Başlamaq üçün səbəb yoxdur❗️")
+    return await event.respond("Başlamaq üçün səbəb yazın❗️")
   else:
-    return await event.respond("Əməliyyata başlamaq üçün səbəb yoxdur")
+    return await event.respond("Əməliyyata başlamaq üçün səbəb yazın")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
