@@ -27,7 +27,7 @@ async def start(event):
   await event.reply("**🌀Rahid_Tag_Bot**\n ilə qrupunuzdakı bütün üzvləri tag edə bilərəm \nƏmrlər üçün =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Məni qrupa əlavə et ➕', 'https://t.me/luRahid_Tag_Bot?startgroup=a')],
+		      [Button.url('Məni qrupa əlavə et ➕', 'https://t.me/Rahid_Tag_Bot?startgroup=a')],
                       [Button.url('Support🛠', 'https://t.me/Rahid_Support')],
                       [Button.url('Rəsmi Kanal📣', 'https://t.me/Rahid_44')],
 		      [Button.url('İnkişaf etdirici👨🏻‍💻', 'https://t.me/yalvargelim')],
