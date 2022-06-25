@@ -138,7 +138,7 @@ async def cancel(event):
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
-    return await event.respond("Bu əmr qruplar və kanallar üçün etibarlıdır.❗️**")
+    return await event.respond("**Bu əmr qruplar və kanallar üçün etibarlıdır.❗️**")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
