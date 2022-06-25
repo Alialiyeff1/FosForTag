@@ -1,18 +1,18 @@
 {
-  "name": "Frozen Tagger Bot",
-  "logo":"https://telegra.ph/file/133b9125da464d1db6fca.jpg",
-  "description": "Frozen Tagger ÜCRETSİZ ŞEKILDE GRUBUNUZDA ÜYELERI ETIKETLEYE BILIR.",
+  "name": "Rahid Tag Bot",
+  "logo":"https://te.legra.ph/file/9297759dad7bac69eee9f.jpg",
+  "description": "Rahid Tag Pulsuz şəkildə qrupunuzda hərkəsi tag edə bilər.",
   "env": {
     "TOKEN": {
-      "description": "@botfather Vasitesi ile Ala Bilersen(Gerekli)",
+      "description": "@botfather botdan ala bilərsən (Zəruri)",
       "value": ""
     },
     "APP_ID": {
-      "description": " my.telegram.org vasitesi ile ala bilersen (Gerekli)",
+      "description": " my.telegram.org saytdan ala bilərsən (Zəruri)",
       "value": ""
     },
     "API_HASH": {
-      "description": "my.telegram.org Vasitesi ile ala bilersen (Gerekli)",
+      "description": "my.telegram.org saytdan ala bilərsən (Zəruri)",
       "value": ""
     }
   },
