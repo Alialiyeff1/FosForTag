@@ -24,19 +24,19 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀Rahid_Tag_Bot**\n ilə qrupunuzdakı bütün üzvləri tag edə bilərəm \nƏmrlər üçün =======> /help yazın**",
+  await event.reply("**⚡Fosfor tag bot**\n ilə qrupunuzdakı bütün üzvləri tag edə bilərəm \nƏmrlər üçün =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Məni qrupa əlavə et ➕', 'https://t.me/Rahid_Tag_Bot?startgroup=a')],
-                      [Button.url('Support🛠', 'https://t.me/Rahid_Support')],
-                      [Button.url('Rəsmi Kanal📣', 'https://t.me/Rahid_44')],
-		      [Button.url('İnkişaf etdirici👨🏻‍💻', 'https://t.me/yalvargelim')],
+		      [Button.url('Məni qrupa əlavə et ➕', 'https://t.me/Fosfortagbot?startgroup=a')],
+                      [Button.url('Support🚑', 'https://t.me/Fosforsup')],
+                      [Button.url('Rəsmi Kanal🔗', 'https://t.me/Fosforbots')],
+		      [Button.url('Sahib👨🏻‍💻', 'https://t.me/BossReply')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 Rahid_Tag_Bot Əmrləri**\n\n**/tag - 5-li tag edər**\n\n**/etag - Emoji ilə tag edər**\n\n**/tektag - Tək-tək tag edər**\n\n**/admins - Adminləri tək-tək tag edər**\n\n**/start - Botu başladır**"
+  helptext = "**⚡FosFor Tag Bot Əmrləri**\n\n**/tag - 5-li tag edər**\n\n**/etag - Emoji ilə tag edər**\n\n**/tektag - Tək-tək tag edər**\n\n**/admins - Adminləri tək-tək tag edər**\n\n**/start - Botu başladır**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni qrupa əlavə et ➕', 'https://t.me/FosFortagbot?startgroup=a')],
