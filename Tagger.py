@@ -199,7 +199,7 @@ async def cancel(event):
   anlik_calisan.remove(event.chat_id)
 	
 
-@client.on(events.NewMessage(pattern="^/ttag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/stag ?(.*)"))
 async def mentionall(event):
   global tekli_calisan
   if event.is_private:
