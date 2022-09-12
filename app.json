@@ -1,18 +1,18 @@
 {
-  "name": "Rahid Tag Bot",
+  "name": "FosFor Tag Bot",
   "logo":"https://te.legra.ph/file/9297759dad7bac69eee9f.jpg",
-  "description": "Rahid Tag Pulsuz şəkildə qrupunuzda hərkəsi tag edə bilər.",
+  "description": "FosFor Tag Pulsuz şəkildə qrupunuzda hərkəsi tag edə bilər.",
   "env": {
     "TOKEN": {
-      "description": "@botfather botdan ala bilərsən (Zəruri)",
+      "description": "@botfather botdan ala bilərsən (Zəruri).",
       "value": ""
     },
     "APP_ID": {
-      "description": " my.telegram.org saytdan ala bilərsən (Zəruri)",
+      "description": " my.telegram.org saytdan ala bilərsən (Zəruri).",
       "value": ""
     },
     "API_HASH": {
-      "description": "my.telegram.org saytdan ala bilərsən (Zəruri)",
+      "description": "my.telegram.org saytdan ala bilərsən (Zəruri).",
       "value": ""
     }
   },
